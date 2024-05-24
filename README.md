@@ -1,10 +1,6 @@
 # Android device tree for samsung SM-A057F (a05s)
 
-```
-#
-# Copyright (C) 2024 The Android Open Source Project
-# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-```
+# Clone Tree
+    git clone https://github.com/TheNoobDevs/custom_twrp_samsung_a05s -b twrp-12.1 device/samsung/a05s
+# Build twrp
+    ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_a05s-eng; mka recoveryimage
