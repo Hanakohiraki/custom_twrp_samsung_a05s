@@ -56,7 +56,7 @@ BOARD_MKBOOTIMG_ARGS +=
 --header_version=2
 --kernel_base=0x00000000
 --page_size=4096 
---ramdisk_offset==0x02000000
+--ramdisk_offset=0x02000000
 --tags_offset=0x01e00000
 --dtb_offset=0x01f00000
 --kernel_offset=0x00008000
