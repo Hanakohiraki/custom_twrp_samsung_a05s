@@ -41,6 +41,6 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) $(AVBTOOL) $(recovery_ramdisk) $
 	@echo "Made recovery image: $@"
 	$(hide) tar -C $(PRODUCT_OUT) -c recovery.img > $(FLASH_IMAGE_TARGET)
 	@echo "Made flashable $(FLASH_IMAGE_TARGET): $@"
-        $(hide) mv $(PRODUCT_OUT) recovery.img $(PRODUCT_OUT) TWRP_unofficial_TND.img
-        @echo "Renamed Recovery"
+    $(hide) mv $(PRODUCT_OUT) recovery.img $(PRODUCT_OUT) TWRP_unofficial_TND.img
+    @echo "Renamed Recovery: $@"
 
