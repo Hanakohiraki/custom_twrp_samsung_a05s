@@ -49,7 +49,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 firmware_class.path=/vendor/firmware_mnt/image printk.devkmsg=on bootconfig androidboot.hardware=qcom androidboot.memcg=1 androidboot.load_modules_parallel=true androidboot.usbcontroller=4e00000.dwc3 loop.max_part=7
 
 # Bootimg
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/bootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_MKBOOTIMG_ARGS += 
 --board=SRPWE03A002
@@ -171,7 +171,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_APEX := true
 TW_INCLUDE_FASTBOOTD := true
 TW_PREPARE_DATA_MEDIA_EARLY := true
-TW_DEVICE_VERSION := TND B001 
+TW_DEVICE_VERSION := TND B002 
 
 # Logging
 TARGET_USES_LOGD := true
