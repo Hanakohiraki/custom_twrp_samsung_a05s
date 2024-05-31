@@ -61,9 +61,9 @@ BOARD_MKBOOTIMG_ARGS +=
 --dtb_offset=0x01f00000
 --kernel_offset=0x00008000
 --dtbo_offset=0x04650000
---dtb=$(DEVICE_PATH)/prebuilt/dtb.img
---dtbo=$(DEVICE_PATH)/prebuilt/dtbo.img
---kernel=$(DEVICE_PATH)/prebuilt/kernel
+--dtb=$(TARGET_PREBUILT_DTB)
+--dtbo=$(TARGET_PREBUILT_DTBOIMAGE)
+--kernel=$(TARGET_PREBUILT_KERNEL)
 --cmdline=$(BOARD_KERNEL_CMDLINE)
 
 # Kernel - prebuilt
