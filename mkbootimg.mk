@@ -16,9 +16,6 @@ LOCAL_PATH := $(call my-dir)
 
 FLASH_IMAGE_TARGET ?= $(PRODUCT_OUT)/recovery.tar
 
-RECOVERY_IMAGE_TARGET ?= $(PRODUCT_OUT)/TWRP_unofficial_TND.tar
-
-
 $(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) $(AVBTOOL) $(INTERNAL_BOOTIMAGE_FILES)
 	$(call pretty,"Target boot image: $@")
 	$(hide) $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_ARGS) $(INTERNAL_MKBOOTIMG_VERSION_ARGS) $(BOARD_MKBOOTIMG_ARGS) --output $@
@@ -43,7 +40,5 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) $(AVBTOOL) $(recovery_ramdisk) $
 	  $(BOARD_AVB_RECOVERY_ADD_HASH_FOOTER_ARGS)
 	@echo "Made recovery image: $@"
 	$(hide) tar -C $(PRODUCT_OUT) -c recovery.img > $(FLASH_IMAGE_TARGET) 
-	@echo "Made flashable $(FLASH_IMAGE_TARGET): $@" \
-	$(hide) mv $(PRODUCT_OUT)/recovery.img > $(RECOVERY_IMAGE_TARGET)
-    @echo "Made $(RECOVERY_IMAGE_TARGET): $@"
+	@echo "Made flashable $(FLASH_IMAGE_TARGET): $@" 
 
