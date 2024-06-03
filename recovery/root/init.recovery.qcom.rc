@@ -28,6 +28,8 @@
 import /init.recovery.display.rc
 
 on init
+    start servicemanager
+
     # unlink /efs > /mnt/vendor/efs
     rm /efs
     mkdir /efs
@@ -54,6 +56,11 @@ on fs
 # Mount firmware
     mkdir /vendor/firmware_mnt
     mount vfat /dev/block/bootdevice/by-name/apnhlos /vendor/firmware_mnt ro
+
+service servicemanager /system/bin/servicemanager 
+    disabled 
+    group root readproc 
+    seclabel u:r:recovery:s0 
 
 on property:ro.build.version.security_patch=*
     setprop ro.vendor.build.security_patch ${ro.build.version.security_patch}
