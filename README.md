@@ -1,3 +1,4 @@
+![1000000187](https://github.com/Hanakohiraki/custom_twrp_samsung_a05s/assets/123821106/11f89f1d-1203-4c17-9687-dc7213652e35)
 
 # Android device tree for samsung SM-A057F (A05s)
 
@@ -17,3 +18,7 @@ If you UNLOCKING BOOTLOADER in your phone Your device may Die/Void/Warranty expi
 > [NOTE]
 > 
 > We recommend that you "root" your device to copy your faulty TWRP recovery data. You can send this to the developer to fix this.
+>
+> For now, we recommend patiently waiting for the official BETA version from the developers.
+> 
+> If you really want to install Please use the [latest version](https://github.com/TheNoobDevs/custom_twrp_samsung_a05s/releases)
