@@ -1,5 +1,7 @@
 ![1000000187](https://github.com/Hanakohiraki/custom_twrp_samsung_a05s/assets/123821106/11f89f1d-1203-4c17-9687-dc7213652e35)
 
+Upcoming languages [EN]()/[TH]()/[ID]()
+
 # Android device tree for samsung SM-A057F (A05s)
 
 >  TWRP may not be complete yet. Please install with care.
