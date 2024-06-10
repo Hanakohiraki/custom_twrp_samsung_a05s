@@ -1,6 +1,6 @@
 ![1000000187](https://github.com/Hanakohiraki/custom_twrp_samsung_a05s/assets/123821106/11f89f1d-1203-4c17-9687-dc7213652e35)
 
-ภาษาที่กำลังพร้อมใช้งาน: [EN]()/[TH]()/[ID]()
+ภาษาที่กำลังพร้อมใช้งาน: [EN](https://github.com/Hanakohiraki/custom_twrp_samsung_a05s/tree/patch-1)/[TH(uanow)](https://github.com/Hanakohiraki/custom_twrp_samsung_a05s/blob/patch-1/README_TH.md)/[ID]()
 
 # Android device tree for samsung SM-A057F (A05s)
 
